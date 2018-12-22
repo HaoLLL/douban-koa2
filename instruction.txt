@@ -1,0 +1,32 @@
+http 接受 解析 响应(html页面 json文本)
+中间件 执行上下文
+application 
+context
+request 
+response
+middlewares
+session cookie
+
+on-finished:事件监听 当http请求开始 关闭 完成的时候调用callback
+koa-compose:中间件的函数数组
+context:包括requset response
+
+compose()？？？？？？？
+new Koa:
+1.application中 为每一个request response生成ctx use方法接受函数 push到中间件数组
+2.中间件数组处理ctx 结果给handleResponse
+fnMiddleware(ctx).then(handleResponse) 
+3.比普通的多:push中间件 中间件处理ctx
+
+1.const app = new Koa();
+2.app.use(middleware)//只是push到数组汇总
+3.app.listen(2333):
+//this.callback(1.createContext:生成ctx;2.handleRequest:把ctx注入到中间件函数中)
+
+context中:
+1.delegate(proto,'response').method('attachment') 给proto原型链中挂request,response,和一些工具方法
+
+1.纯函数
+2.尾递归 函数自己调用自己
+3.compose组合 基于纯函数
+
