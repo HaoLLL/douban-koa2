@@ -1,0 +1,13 @@
+//- 先把default拿过来
+extends ./layouts/default
+
+block title
+    title Koa 首页
+block content
+    div.container
+        div.row
+            div.col-md-8
+                h1 Hi #{you}
+                p This is #{me}
+            div.col-md-4
+                p 测试动态pug模板引擎集成koa-views中间件

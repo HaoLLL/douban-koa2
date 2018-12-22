@@ -36,3 +36,6 @@ context中:
 
 ejs pug
 
+模板引擎以中间件的形式集成到项目中
+koa-view
+
