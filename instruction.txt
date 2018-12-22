@@ -30,3 +30,9 @@ context中:
 2.尾递归 函数自己调用自己
 3.compose组合 基于纯函数
 
+1.git checkout -b self
+2.提PR
+3.git checkout master && git pull
+
+ejs pug
+
