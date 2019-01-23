@@ -109,3 +109,7 @@ ecosystem
 服务器上面clone 看是不是有权限
 创建网站根目录 
 pm2 deploy.yaml production setup
+
+etc/nginx/nginx.d
+模拟情况 本地配置host koa2.haolll.xyz转到服务器nginx上面
+nginx转发来自koa2.haolll.xyz的服务到一定的端口上面
