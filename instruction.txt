@@ -39,3 +39,67 @@ ejs pug
 模板引擎以中间件的形式集成到项目中
 koa-view
 
+document 一行记录
+collection 多行记录 一张表
+database
+
+schema
+model ('Dog',{name:String});
+entity new model() save()的能力
+
+查询一部电影:
+得到分类数据 分类表中有movies(ObjectId) 用name查出movies 有没有这部电影的id
+
+node不支持decorator语法 babel插件
+babel-plugin-transform-decorators-legacy
+babel-preset-stage-0
+babel-preset-react
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ],
+        "stage-0",
+        "react"
+    ],
+    "plugins": [
+        "transform-runtime",
+        "transform-decorators-legacy",
+        "transform-class-properties"
+    ]
+}
+stage0:ES7提案 包含stage-1 stage-2 stage-3
+transform-do-expressions
+transform-function-bind
+
+env:根据浏览器环境将ES2015+转成es5
+javascript = es+dom+bom
+
+babel-polyfill/transform-runtime:
+babel编译的时候只是转换语法
+不会转换BOM中不兼容的API Promise async Set...
+
+transform-runtime:
+
+
+通过babel-node启动 npm install babel-core babel-polyfill
+新建start.js
+
+
+
+http:请求 
+npm pm2 -g 
+node mongodb nginx
+
+所有的静态请求被80端口监听到 dist/html js css
+动态数据请求proxy 转发给node服务
+
+构建过程也在服务器上面进行
+pm2 服务器自动拉取一个分支 自动构建
+安装node nginx mongodb
+ecosystem
