@@ -8,6 +8,10 @@
     "start": "rm -rf dist && rm -rf .cache && NODE_ENV=development nodemon ./start.js ",
     "build": "rm -rf dist && parcel build src/index.html --no-cache -d dist/ --public-url /"
   },
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/HaoLLL/douban-koa2.git"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {

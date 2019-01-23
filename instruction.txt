@@ -103,3 +103,8 @@ node mongodb nginx
 pm2 服务器自动拉取一个分支 自动构建
 安装node nginx mongodb
 ecosystem
+
+服务器拉取github源码
+服务器生成的rsa 拷贝到github上面
+服务器上面clone 看是不是有权限
+创建网站根目录
