@@ -1,6 +1,6 @@
-import bodyParser from 'koa-bodyparser';
-import logger from 'koa-logger';
-import session from 'koa-session';
+const bodyParser = require('koa-bodyparser');
+const logger = require('koa-logger');
+const session = require('koa-session');
 export const addBodyParser = app => {
     app.use(bodyParser());
 }
